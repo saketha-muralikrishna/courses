@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnFast - Course Details: Data Analytics Masterclass</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+      }
+      @media (min-width: 768px) {
+        body {
+          padding: 4rem 2rem;
+        }
+      }
+      .btn-primary {
+        background-image: linear-gradient(
+          to right,
+          #ef4444,
+          #f87171
+        ); /* Red gradient */
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-image: linear-gradient(to right, #dc2626, #ef4444);
+        box-shadow: 0 10px 20px rgba(239, 68, 68, 0.4);
+      }
+      .section-heading {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      .section-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 60%;
+        height: 4px;
+        background-color: #ef4444; /* Red */
+        border-radius: 2px;
+      }
+      .list-icon {
+        color: #ef4444; /* Red */
+        margin-right: 0.5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl p-8 md:p-14 space-y-12 border border-blue-100"
+    >
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a
+          href="learnfast-courses.html"
+          class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition duration-200"
+        >
+          <svg
+            class="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          Back to All Courses
+        </a>
+      </div>
+
+      <!-- Course Header Section -->
+      <header class="text-center md:text-left">
+        <span
+          class="inline-block bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full mb-3"
+          >Data & Analytics</span
+        >
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight"
+        >
+          Data Analytics Masterclass
+        </h1>
+        <p class="text-xl text-gray-700 md:text-2xl mb-6">
+          Transform raw data into actionable insights. Cover Excel, SQL,
+          Tableau, and basic Python for data manipulation and visualization.
+        </p>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 text-gray-600 text-lg"
+        >
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-yellow-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+              ></path>
+            </svg>
+            4.7 (4,100+ reviews)
+          </span>
+          <span class="mx-2 hidden md:block">|</span>
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-blue-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            90 Hours
+          </span>
+          <span class="mx-2 hidden md:block">|</span>
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Intermediate
+          </span>
+        </div>
+      </header>
+
+      <!-- Course Overview / Hero Image -->
+      <section class="mt-8">
+        <img
+          src="https://placehold.co/1000x500/EF4444/FFFFFF?text=Data+Analytics+Masterclass+Banner"
+          alt="Data Analytics Masterclass Banner"
+          class="w-full h-auto rounded-lg shadow-lg mb-8"
+          onerror="this.onerror=null;this.src='https://placehold.co/1000x500/CCCCCC/666666?text=Course+Image+Unavailable';"
+        />
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Become a data-driven decision maker with this comprehensive
+          masterclass. You'll gain proficiency in essential tools and techniques
+          to collect, clean, analyze, and visualize data, turning raw numbers
+          into strategic insights for any business.
+        </p>
+      </section>
+
+      <!-- What You'll Learn Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          What You'll Learn
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-gray-700 text-lg"
+        >
+          <ul class="list-none space-y-3">
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Advanced Excel for data manipulation and analysis
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>SQL
+              for database querying and management
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Data
+              visualization and dashboard creation with Tableau
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Introduction to Python for data analysis (Pandas, Matplotlib)
+            </li>
+          </ul>
+          <ul class="list-none space-y-3">
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Statistical analysis and hypothesis testing
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Data
+              cleaning, transformation, and validation techniques
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Building compelling data narratives and presentations
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Practical application with real-world case studies
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Course Curriculum Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Course Curriculum
+        </h3>
+        <div class="space-y-6">
+          <!-- Module 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 1: Excel for Data Analysis
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Data Import and Cleaning in Excel</li>
+              <li>Formulas, Functions, and PivotTables</li>
+              <li>Advanced Charting and Reporting</li>
+            </ul>
+          </div>
+          <!-- Module 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 2: SQL for Data Wrangling
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Introduction to Relational Databases</li>
+              <li>Basic to Advanced SQL Queries (JOINs, Subqueries)</li>
+              <li>Data Manipulation Language (DML)</li>
+            </ul>
+          </div>
+          <!-- Module 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 3: Tableau for Data Visualization
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Connecting to Data Sources in Tableau</li>
+              <li>Building Dashboards and Interactive Visualizations</li>
+              <li>Storytelling with Data</li>
+            </ul>
+          </div>
+          <!-- Module 4 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 4: Python for Data Processing
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Python Basics for Data Analysts</li>
+              <li>Data Loading and Cleaning with Pandas</li>
+              <li>Basic Statistical Analysis with SciPy</li>
+            </ul>
+          </div>
+          <!-- Module 5 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 5: Statistical Analysis & Reporting
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Descriptive vs. Inferential Statistics</li>
+              <li>Hypothesis Testing and A/B Testing Basics</li>
+              <li>Creating Executive Summaries and Presentations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instructor Bio Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Meet Your Instructor
+        </h3>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-red-50 p-8 rounded-lg shadow-md"
+        >
+          <img
+            src="https://placehold.co/150x150/BDBDBD/4A5568?text=Instructor"
+            alt="Instructor Profile Picture"
+            class="w-36 h-36 rounded-full object-cover shadow-lg border-4 border-white"
+            onerror="this.onerror=null;this.src='https://placehold.co/150x150/CCCCCC/666666?text=Instructor';"
+          />
+          <div class="text-center md:text-left">
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">
+              Dr. Data Insights
+            </h4>
+            <p class="text-red-700 font-medium text-lg mb-3">
+              Principal Data Analyst at Global Data Solutions
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Dr. Data Insights has over 8 years of experience leading data
+              analysis initiatives for major corporations. He specializes in
+              transforming complex datasets into clear, actionable strategies.
+              His teaching focuses on practical application and critical
+              thinking in data interpretation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Features & Prerequisites -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">
+              Course Features
+            </h3>
+            <ul class="list-none space-y-3 text-gray-700 text-lg">
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Hands-on Labs & Exercises
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Case Study Simulations
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Certificate of Completion
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Access to Premium Templates
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Industry Best Practices
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">
+              Prerequisites
+            </h3>
+            <ul class="list-none space-y-3 text-gray-700 text-lg">
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span
+                >Basic computer literacy
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span>No
+                prior experience with data tools required
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span>A
+                keen eye for detail
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing and Enrollment -->
+      <section class="mt-12 pt-8 border-t border-gray-200 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Ready to Master Data Analytics?
+        </h3>
+        <p class="text-5xl font-extrabold text-red-700 mb-6">$549</p>
+        <a
+          href="registration.html"
+          class="inline-block btn-primary text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75"
+        >
+          Enroll Now
+        </a>
+        <p class="text-gray-500 text-sm mt-4">
+          Unlock the power of data-driven insights!
+        </p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Frequently Asked Questions
+        </h3>
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Is this course hands-on?
+            </h4>
+            <p class="text-gray-700">
+              Yes, the course is highly practical with numerous exercises, labs,
+              and a capstone project to solidify your learning.
+            </p>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              What's the difference between Data Science and Data Analytics?
+            </h4>
+            <p class="text-gray-700">
+              Data Analytics focuses on understanding past and present data,
+              while Data Science often involves predicting future trends and
+              building more complex models. This course provides a strong
+              foundation for both.
+            </p>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Will I get access to the software?
+            </h4>
+            <p class="text-gray-700">
+              We guide you through setting up free versions of necessary
+              software (like Python distributions and Tableau Public) or provide
+              access where applicable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="text-center text-gray-600 text-base pt-12 border-t border-gray-200 mt-16"
+      >
+        <p>&copy; 2025 LearnFast. All rights reserved.</p>
+        <p class="mt-3">
+          Questions?
+          <a
+            href="mailto:support@learnfast.com"
+            class="text-blue-600 hover:underline font-medium"
+            >Contact our support team</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

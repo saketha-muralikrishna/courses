@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnFast - Course Details: Cloud Computing Fundamentals</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+      }
+      @media (min-width: 768px) {
+        body {
+          padding: 4rem 2rem;
+        }
+      }
+      .btn-primary {
+        background-image: linear-gradient(
+          to right,
+          #6366f1,
+          #8b5cf6
+        ); /* Indigo/Purple gradient */
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-image: linear-gradient(to right, #4f46e5, #6366f1);
+        box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+      }
+      .section-heading {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      .section-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 60%;
+        height: 4px;
+        background-color: #6366f1; /* Indigo */
+        border-radius: 2px;
+      }
+      .list-icon {
+        color: #6366f1; /* Indigo */
+        margin-right: 0.5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl p-8 md:p-14 space-y-12 border border-blue-100"
+    >
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a
+          href="learnfast-courses.html"
+          class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition duration-200"
+        >
+          <svg
+            class="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          Back to All Courses
+        </a>
+      </div>
+
+      <!-- Course Header Section -->
+      <header class="text-center md:text-left">
+        <span
+          class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold px-3 py-1 rounded-full mb-3"
+          >Cloud Computing</span
+        >
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight"
+        >
+          Cloud Computing Fundamentals
+        </h1>
+        <p class="text-xl text-gray-700 md:text-2xl mb-6">
+          Gain essential knowledge in cloud concepts, services (IaaS, PaaS,
+          SaaS), and major providers like AWS, Azure, and Google Cloud.
+        </p>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 text-gray-600 text-lg"
+        >
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-yellow-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+              ></path>
+            </svg>
+            4.6 (3,200+ reviews)
+          </span>
+          <span class="mx-2 hidden md:block">|</span>
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-blue-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            75 Hours
+          </span>
+          <span class="mx-2 hidden md:block">|</span>
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Beginner
+          </span>
+        </div>
+      </header>
+
+      <!-- Course Overview / Hero Image -->
+      <section class="mt-8">
+        <img
+          src="https://placehold.co/1000x500/6366F1/FFFFFF?text=Cloud+Computing+Fundamentals+Banner"
+          alt="Cloud Computing Fundamentals Banner"
+          class="w-full h-auto rounded-lg shadow-lg mb-8"
+          onerror="this.onerror=null;this.src='https://placehold.co/1000x500/CCCCCC/666666?text=Course+Image+Unavailable';"
+        />
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Demystify the cloud and understand its core components. This course
+          provides a solid foundation in cloud computing, covering its benefits,
+          deployment models, service types, and an overview of the major cloud
+          providers. Essential for IT professionals, developers, and business
+          leaders.
+        </p>
+      </section>
+
+      <!-- What You'll Learn Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          What You'll Learn
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-gray-700 text-lg"
+        >
+          <ul class="list-none space-y-3">
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Key
+              cloud computing concepts and terminology
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Understanding IaaS, PaaS, and SaaS service models
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Cloud
+              deployment models (Public, Private, Hybrid)
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Overview of leading cloud providers: AWS, Azure, Google Cloud
+            </li>
+          </ul>
+          <ul class="list-none space-y-3">
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Cloud
+              security and compliance basics
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Cloud
+              networking and storage fundamentals
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Cost
+              management in the cloud
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Migration strategies to the cloud
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Course Curriculum Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Course Curriculum
+        </h3>
+        <div class="space-y-6">
+          <!-- Module 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 1: Introduction to Cloud Computing
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>What is Cloud Computing?</li>
+              <li>Benefits and Challenges of Cloud Adoption</li>
+              <li>Cloud Service Models: IaaS, PaaS, SaaS</li>
+            </ul>
+          </div>
+          <!-- Module 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 2: Cloud Deployment Models
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Public Cloud vs. Private Cloud</li>
+              <li>Hybrid Cloud and Multi-cloud Strategies</li>
+              <li>Community Cloud</li>
+            </ul>
+          </div>
+          <!-- Module 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 3: Cloud Infrastructure & Networking
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Virtualization Concepts</li>
+              <li>Cloud Storage Options (Block, Object, File)</li>
+              <li>Basic Cloud Networking (VPCs, Subnets)</li>
+            </ul>
+          </div>
+          <!-- Module 4 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 4: Major Cloud Providers Overview
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Introduction to AWS Services</li>
+              <li>Introduction to Azure Services</li>
+              <li>Introduction to Google Cloud Services</li>
+            </ul>
+          </div>
+          <!-- Module 5 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 5: Cloud Security, Cost & Future Trends
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Cloud Security Best Practices</li>
+              <li>Cost Management and Optimization</li>
+              <li>Emerging Cloud Technologies</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instructor Bio Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Meet Your Instructor
+        </h3>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-indigo-50 p-8 rounded-lg shadow-md"
+        >
+          <img
+            src="https://placehold.co/150x150/BDBDBD/4A5568?text=Instructor"
+            alt="Instructor Profile Picture"
+            class="w-36 h-36 rounded-full object-cover shadow-lg border-4 border-white"
+            onerror="this.onerror=null;this.src='https://placehold.co/150x150/CCCCCC/666666?text=Instructor';"
+          />
+          <div class="text-center md:text-left">
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">
+              Dr. Cloud Architect
+            </h4>
+            <p class="text-indigo-700 font-medium text-lg mb-3">
+              Principal Cloud Architect at NexGen Cloud Solutions
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Dr. Cloud Architect is a leading expert in cloud infrastructure
+              with over 12 years of experience designing and implementing
+              scalable cloud solutions for enterprises. He holds multiple
+              certifications from major cloud providers and is passionate about
+              guiding individuals through the complexities of cloud technology.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Features & Prerequisites -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">
+              Course Features
+            </h3>
+            <ul class="list-none space-y-3 text-gray-700 text-lg">
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Cloud Console Demos
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span>Key
+                Cloud Concepts Explained
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Certificate of Completion
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Cloud Service Comparison Guides
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Roadmap for Advanced Cloud Certifications
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">
+              Prerequisites
+            </h3>
+            <ul class="list-none space-y-3 text-gray-700 text-lg">
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span
+                >Basic understanding of computing and internet
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span>No
+                prior cloud experience required
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span>An
+                interest in technology and scalability
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing and Enrollment -->
+      <section class="mt-12 pt-8 border-t border-gray-200 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Ready to Step into the Cloud?
+        </h3>
+        <p class="text-5xl font-extrabold text-indigo-700 mb-6">$479</p>
+        <a
+          href="registration.html"
+          class="inline-block btn-primary text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75"
+        >
+          Enroll Now
+        </a>
+        <p class="text-gray-500 text-sm mt-4">
+          Future-proof your career with cloud expertise!
+        </p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Frequently Asked Questions
+        </h3>
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Is this course aligned with any certifications?
+            </h4>
+            <p class="text-gray-700">
+              While not a certification exam prep course, it covers fundamental
+              concepts essential for entry-level cloud certifications (e.g., AWS
+              Cloud Practitioner, Azure Fundamentals).
+            </p>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Will I get hands-on experience with cloud platforms?
+            </h4>
+            <p class="text-gray-700">
+              The course includes demonstrations of various cloud services.
+              We'll guide you on how to set up free tier accounts to practice on
+              your own.
+            </p>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              What is the future outlook for cloud computing careers?
+            </h4>
+            <p class="text-gray-700">
+              Cloud computing is a rapidly growing field with high demand for
+              skilled professionals across various industries, making it an
+              excellent career choice.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="text-center text-gray-600 text-base pt-12 border-t border-gray-200 mt-16"
+      >
+        <p>&copy; 2025 LearnFast. All rights reserved.</p>
+        <p class="mt-3">
+          Questions?
+          <a
+            href="mailto:support@learnfast.com"
+            class="text-blue-600 hover:underline font-medium"
+            >Contact our support team</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

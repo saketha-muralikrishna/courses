@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnFast - Course Details: Complete Web Development Bootcamp</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f0f4f8; /* Light, calming background consistent with landing page */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+      }
+      @media (min-width: 768px) {
+        body {
+          padding: 4rem 2rem; /* More padding for larger screens */
+        }
+      }
+      .btn-primary {
+        background-image: linear-gradient(
+          to right,
+          #4f46e5,
+          #6366f1
+        ); /* Indigo gradient */
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-image: linear-gradient(
+          to right,
+          #4338ca,
+          #5b21b6
+        ); /* Darker indigo/purple */
+        box-shadow: 0 10px 20px rgba(79, 70, 229, 0.4);
+      }
+      .section-heading {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      .section-heading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 60%;
+        height: 4px;
+        background-color: #4f46e5;
+        border-radius: 2px;
+      }
+      .list-icon {
+        color: #4f46e5; /* Indigo */
+        margin-right: 0.5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl p-8 md:p-14 space-y-12 border border-blue-100"
+    >
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a
+          href="learnfast-courses.html"
+          class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition duration-200"
+        >
+          <svg
+            class="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          Back to All Courses
+        </a>
+      </div>
+
+      <!-- Course Header Section -->
+      <header class="text-center md:text-left">
+        <span
+          class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-3"
+          >Programming</span
+        >
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight"
+        >
+          Complete Web Development Bootcamp
+        </h1>
+        <p class="text-xl text-gray-700 md:text-2xl mb-6">
+          Master modern web technologies to build dynamic, responsive, and
+          robust web applications from scratch.
+        </p>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 text-gray-600 text-lg"
+        >
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-yellow-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+              ></path>
+            </svg>
+            4.8 (8,500+ reviews)
+          </span>
+          <span class="mx-2 hidden md:block">|</span>
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-blue-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            120 Hours
+          </span>
+          <span class="mx-2 hidden md:block">|</span>
+          <span class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Intermediate
+          </span>
+        </div>
+      </header>
+
+      <!-- Course Overview / Hero Image -->
+      <section class="mt-8">
+        <img
+          src="https://placehold.co/1000x500/4F46E5/FFFFFF?text=Web+Development+Course+Banner"
+          alt="Web Development Course Banner"
+          class="w-full h-auto rounded-lg shadow-lg mb-8"
+          onerror="this.onerror=null;this.src='https://placehold.co/1000x500/CCCCCC/666666?text=Course+Image+Unavailable';"
+        />
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Dive deep into the core concepts of web development, from foundational
+          languages to advanced frameworks. This bootcamp is meticulously
+          crafted to transform beginners into job-ready full-stack developers.
+          You'll gain hands-on experience with real-world projects, guided by
+          industry experts who bring years of practical knowledge to the virtual
+          classroom.
+        </p>
+      </section>
+
+      <!-- What You'll Learn Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          What You'll Learn
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-gray-700 text-lg"
+        >
+          <ul class="list-none space-y-3">
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Build
+              responsive web layouts with HTML5 & CSS3
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Develop interactive front-end applications with JavaScript &
+              React
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Create
+              robust back-end APIs using Node.js & Express
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Manage
+              databases with MongoDB and PostgreSQL
+            </li>
+          </ul>
+          <ul class="list-none space-y-3">
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Implement user authentication and authorization
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span>Deploy
+              applications to cloud platforms (e.g., Heroku, Netlify)
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Understand version control with Git & GitHub
+            </li>
+            <li class="flex items-start">
+              <span class="list-icon text-2xl leading-none">&check;</span
+              >Practice agile development methodologies
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Course Curriculum Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Course Curriculum
+        </h3>
+        <div class="space-y-6">
+          <!-- Module 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 1: Foundations of Web Development
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Introduction to HTML & Semantic HTML</li>
+              <li>Styling with CSS: Selectors, Box Model, Flexbox, Grid</li>
+              <li>Responsive Design Principles</li>
+            </ul>
+          </div>
+          <!-- Module 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 2: JavaScript & DOM Manipulation
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>JavaScript Fundamentals (ES6+)</li>
+              <li>DOM Manipulation and Event Handling</li>
+              <li>Asynchronous JavaScript (Promises, Async/Await)</li>
+            </ul>
+          </div>
+          <!-- Module 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 3: Front-End Frameworks (React)
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>React Basics: Components, Props, State</li>
+              <li>Hooks, Context API, and Router</li>
+              <li>Building Single-Page Applications</li>
+            </ul>
+          </div>
+          <!-- Module 4 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 4: Back-End Development (Node.js)
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Node.js and npm basics</li>
+              <li>Express.js Framework and REST APIs</li>
+              <li>Database Integration (MongoDB/Mongoose)</li>
+            </ul>
+          </div>
+          <!-- Module 5 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Module 5: Advanced Topics & Deployment
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li>Authentication & Authorization (JWT)</li>
+              <li>Testing Fundamentals</li>
+              <li>Deployment Strategies (Heroku, Netlify, Vercel)</li>
+              <li>Version Control with Git & GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instructor Bio Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Meet Your Instructor
+        </h3>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-blue-50 p-8 rounded-lg shadow-md"
+        >
+          <img
+            src="https://placehold.co/150x150/BDBDBD/4A5568?text=Instructor"
+            alt="Instructor Profile Picture"
+            class="w-36 h-36 rounded-full object-cover shadow-lg border-4 border-white"
+            onerror="this.onerror=null;this.src='https://placehold.co/150x150/CCCCCC/666666?text=Instructor';"
+          />
+          <div class="text-center md:text-left">
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">Jane Doe</h4>
+            <p class="text-blue-700 font-medium text-lg mb-3">
+              Lead Full-Stack Developer at InnovateTech Solutions
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Jane is a veteran software engineer with over 10 years of
+              experience building scalable web applications for leading tech
+              companies. She is passionate about teaching and empowering the
+              next generation of developers. Jane specializes in React, Node.js,
+              and cloud architecture, and her engaging teaching style makes
+              complex topics easy to understand.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Features & Prerequisites -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">
+              Course Features
+            </h3>
+            <ul class="list-none space-y-3 text-gray-700 text-lg">
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Hands-on Projects & Assignments
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Downloadable Resources & Codebases
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Certificate of Completion
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Dedicated Q&A Forums
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2713;</span
+                >Lifetime Access to Course Materials
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">
+              Prerequisites
+            </h3>
+            <ul class="list-none space-y-3 text-gray-700 text-lg">
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span
+                >Basic computer literacy
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span
+                >Familiarity with internet browsing
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span>No
+                prior coding experience required!
+              </li>
+              <li class="flex items-center">
+                <span class="list-icon text-2xl leading-none">&#x2714;</span>A
+                curious mind and willingness to learn
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing and Enrollment -->
+      <section class="mt-12 pt-8 border-t border-gray-200 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Ready to Start Your Journey?
+        </h3>
+        <p class="text-5xl font-extrabold text-indigo-700 mb-6">$599</p>
+        <a
+          href="registration.html"
+          class="inline-block btn-primary text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75"
+        >
+          Enroll Now
+        </a>
+        <p class="text-gray-500 text-sm mt-4">
+          Limited seats available. Secure your spot today!
+        </p>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 section-heading">
+          Frequently Asked Questions
+        </h3>
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Is this course suitable for beginners?
+            </h4>
+            <p class="text-gray-700">
+              Absolutely! This bootcamp is designed to take you from zero to
+              hero in web development. No prior coding experience is necessary.
+            </p>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              What kind of support is available?
+            </h4>
+            <p class="text-gray-700">
+              You'll have access to a dedicated Q&A forum, regular live sessions
+              with instructors, and peer support from our global learning
+              community.
+            </p>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              What are the system requirements?
+            </h4>
+            <p class="text-gray-700">
+              A reliable internet connection, a modern web browser, and a
+              computer capable of running standard development tools (details
+              provided upon enrollment).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="text-center text-gray-600 text-base pt-12 border-t border-gray-200 mt-16"
+      >
+        <p>&copy; 2025 LearnFast. All rights reserved.</p>
+        <p class="mt-3">
+          Questions?
+          <a
+            href="mailto:support@learnfast.com"
+            class="text-blue-600 hover:underline font-medium"
+            >Contact our support team</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
